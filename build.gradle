@@ -3,6 +3,7 @@
 plugins {
     id 'java'
     id 'java-library'
+    id 'idea'
     alias(libs.plugins.architectury)
     alias(libs.plugins.architectury.loom) apply false
     alias(libs.plugins.loom.quiltflower) apply false
@@ -54,6 +55,7 @@ subprojects {
         }
 
 
+
         compileOnly(libs.bundles.annotations)
         annotationProcessor(libs.bundles.annotations)
 
@@ -72,6 +74,12 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url = "https://maven.parchmentmc.org" }
 
+        // ---- LOCAL DEPENDENCY
+        flatDir {
+            dirs rootProject.file('libs')
+        }
+        // ----
+
         exclusiveContent {
             forRepository {
                 maven {
@@ -84,6 +92,15 @@ allprojects {
             }
         }
     }
+    // ---- LOCAL DEPENDENCY
+    idea {
+        module {
+            downloadSources = true
+            downloadJavadoc = true
+        }
+    }
+    // ----
+
     compileJava {
         dependsOn(clean)
     }

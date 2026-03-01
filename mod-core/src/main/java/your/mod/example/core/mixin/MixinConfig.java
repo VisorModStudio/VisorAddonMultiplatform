@@ -1,7 +1,7 @@
-package me.phoenixra.visorexample.core.mixin;
+package your.mod.example.core.mixin;
 
-import me.phoenixra.visor.api.ModLoader;
-import me.phoenixra.visorexample.core.common.VisorExample;
+import org.vmstudio.visor.api.ModLoader;
+import your.mod.example.core.common.VisorExample;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;

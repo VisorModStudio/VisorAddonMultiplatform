@@ -1,9 +1,9 @@
-package me.phoenixra.visorexample.core.client;
+package your.mod.example.core.client;
 
-import me.phoenixra.visor.api.VisorAPI;
-import me.phoenixra.visor.api.common.addon.VisorAddon;
-import me.phoenixra.visorexample.core.client.overlays.VROverlayExample;
-import me.phoenixra.visorexample.core.common.VisorExample;
+import org.vmstudio.visor.api.VisorAPI;
+import org.vmstudio.visor.api.common.addon.VisorAddon;
+import your.mod.example.core.client.overlays.VROverlayExample;
+import your.mod.example.core.common.VisorExample;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -15,7 +15,7 @@ public class ExampleAddonClient implements VisorAddon {
     public void onAddonLoad() {
         VisorAPI.addonManager().getRegistries()
                 .overlays()
-                .registerElements(
+                .registerComponents(
                         List.of(
                                 new VROverlayExample(
                                         this,
@@ -27,7 +27,7 @@ public class ExampleAddonClient implements VisorAddon {
 
     @Override
     public @Nullable String getAddonPackagePath() {
-        return "me.phoenixra.visorexample.core.client";
+        return "your.mod.example.core.client";
     }
 
     @Override

@@ -12,7 +12,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.phoenixra.visorexample.fabric.ExampleMod"
+      "your.mod.example.fabric.ExampleMod"
     ]
   },
   "mixins": [

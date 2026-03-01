@@ -1,10 +1,10 @@
-package me.phoenixra.visorexample.forge;
+package your.mod.example.forge;
 
-import me.phoenixra.visor.api.ModLoader;
-import me.phoenixra.visor.api.VisorAPI;
-import me.phoenixra.visorexample.core.client.ExampleAddonClient;
-import me.phoenixra.visorexample.core.common.VisorExample;
-import me.phoenixra.visorexample.core.server.ExampleAddonServer;
+import org.vmstudio.visor.api.ModLoader;
+import org.vmstudio.visor.api.VisorAPI;
+import your.mod.example.core.client.ExampleAddonClient;
+import your.mod.example.core.common.VisorExample;
+import your.mod.example.core.server.ExampleAddonServer;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod(VisorExample.MOD_ID)
