@@ -25,8 +25,8 @@ dependencies {
 
 
 
-    compileOnly(project(path: ':mod-core', configuration: 'namedElements'))
-
+    compileOnly(project(path: ':mod-core', configuration: 'namedElements')) { transitive false }
+    modCompileOnly(libs.visorApi)
 
 
     String fabricApiVersion = "${libs.versions.fabric.api.get()}+${libs.versions.minecraftVersion.get()}";
