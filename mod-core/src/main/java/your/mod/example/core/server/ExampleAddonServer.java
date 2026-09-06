@@ -7,10 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ExampleAddonServer implements VisorAddon {
-    @Override
-    public void onAddonRegister() {
 
-    }
 
     @Override
     public void onAddonLoad() {
